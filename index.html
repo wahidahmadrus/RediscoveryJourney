@@ -87,5 +87,23 @@
         <button class="next" aria-label="Next slide">></button>
       </div>
     </section>
+
+    <section id="contact" aria-label="Contact Me">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <p id="formMsg" class="form-message"></p>
+      </form>
+    </section>
   </body>
 </html>
