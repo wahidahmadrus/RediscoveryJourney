@@ -1,0 +1,22 @@
+:root {
+    --clr-light: #f9f9f9;
+    --clr-dark: #222;
+    --clr-primary: #5568f3;
+    --clr-secondary: #f35555;
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Roboto', sans-serif;
+    --transition: 0.3s ease;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    background: var(--clr-light);
+    color: var(--clr-dark);
+}
