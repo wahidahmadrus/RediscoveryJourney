@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Back</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <nav class="nav">
-        <a href="index.html">MyDevJourney</a>
+        <a class="logo" href="index.html">MyDevJourney</a>
         <button
           class="nav-toggle"
           aria-label="Toggle menu"
@@ -23,10 +26,13 @@
         </ul>
       </nav>
     </header>
-    <section id="hero" aria-label="Hero Section">
-      <h1>My Comeback to Web Development</h1>
-      <p>This is my first step toward rebuilding my skills and this website.</p>
-      <a href="#">Join the journey</a>
+    <section id="hero" class="hero section-reveal" aria-label="Hero Section">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>My Comeback to Web Development</h1>
+        <p>This is my first step toward rebuilding my skills and this website.</p>
+        <button class="btn">Join the journey</button>
+      </div>
     </section>
 
     <section id="features" aria-label="What You'll Learn">

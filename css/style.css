@@ -20,3 +20,87 @@ body {
     background: var(--clr-light);
     color: var(--clr-dark);
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--clr-light);
+}
+
+.logo {
+    font-family: var(--ff-primary);
+    font-size: 1.5rem;
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-weight: 500;
+    transition: color var(--transition);
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: var(--clr-primary);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hero {
+    background: url(../1.jpg) center/cover no-repeat;
+    position: relative;
+    height: 90vh;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: var(--ff-primary);
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: var(--clr-primary);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background var(--transition);
+}
+
+btn:hover {
+    background: var(--clr-secondary);
+}
