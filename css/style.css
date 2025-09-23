@@ -21,6 +21,11 @@ body {
     color: var(--clr-dark);
 }
 
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -104,3 +109,81 @@ body {
 btn:hover {
     background: var(--clr-secondary);
 }
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform .5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 1rem;
+}
+.next {
+    right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+

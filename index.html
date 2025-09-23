@@ -64,33 +64,27 @@
         <div class="slides">
           <div class="slide">
             <img
-              src="images/project1.jpg"
-              width="400"
-              height="200"
+              src="1.jpg"
               alt="Project 1"
             />
           </div>
 
           <div class="slide">
             <img
-              src="images/project2.jpg"
-              width="400"
-              height="200"
+              src="1.jpg"
               alt="Project 2"
             />
           </div>
 
           <div class="slide">
             <img
-              src="images/project3.jpg"
-              width="400"
-              height="200"
+              src="1.jpg"
               alt="Project 3"
             />
           </div>
         </div>
-        <button class="prev" aria-label="Previous slide"><</button>
-        <button class="next" aria-label="Next slide">></button>
+        <button class="slide-btn prev" aria-label="Previous slide"><</button>
+        <button class="slide-btn next" aria-label="Next slide">></button>
       </div>
     </section>
 
@@ -111,5 +105,35 @@
         <p id="formMsg" class="form-message"></p>
       </form>
     </section>
+    <script>
+      const slides = document.querySelector('.slides');
+      const count = document.querySelector('.slide').length;
+      let i = 0;
+      document.querySelector('.next').onclick(()=> {
+        i = (i + 1) % count;
+        slides.style.transform = `translateX(-${i * 100}%)`;
+      });
+
+      document.querySelector('.prev').onclick(()=> {
+        i = (i-1+count)%count;
+        slides.style.transform=`translateX(-${i*100}%)`;
+      })
+
+      const navT = document.querySelector('.nav-toggle');
+      const navM = document.querySelector('.nav-menu');
+
+      navT.onclick(()=>{navM.classList.toggle('show');});
+
+      // scroll reveal
+      const obs = new IntersectionObserver(es=>es.forEach(e=>{
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          obs.unobserve(e.target);
+        }
+      }), {threshold: 0.2});
+
+      document.querySelectorALL('.section-reveal').forEach(s=>obs.observe(s));
+
+    </script>
   </body>
 </html>
