@@ -1,139 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Back</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <nav class="nav">
-        <a class="logo" href="index.html">MyDevJourney</a>
-        <button
-          class="nav-toggle"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-        <ul class="nav-menu">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#features">features</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="hero" class="hero section-reveal" aria-label="Hero Section">
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <h1>My Comeback to Web Development</h1>
-        <p>This is my first step toward rebuilding my skills and this website.</p>
-        <button class="btn">Join the journey</button>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Back</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="index.html">MyDevJourney</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        ☰
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero" class="hero section-reveal" aria-label="Hero Section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>My Comeback to Web Development</h1>
+      <p>This is my first step toward rebuilding my skills and this website.</p>
+      <button class="btn">Join the journey</button>
+    </div>
+  </section>
+
+  <section id="features" aria-label="What You'll Learn">
+    <h2>What You'll Learn</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        <h3>HTML & CSS</h3>
+        <p>Structure and style your pages with modern best practices.</p>
       </div>
-    </section>
 
-    <section id="features" aria-label="What You'll Learn">
-      <h2>What You'll Learn</h2>
-      <div class="feature-cards">
-        <div class="card">
-          <i class="fas fa-code" aria-hidden="true"></i>
-          <h3>HTML & CSS</h3>
-          <p>Structure and style your pages with modern best practices.</p>
+      <div class="card">
+        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+        <h3>Responsive Design</h3>
+        <p>Make layouts that adapt to any device.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-robot" aria-hidden="true"></i>
+        <h3>JS Interactivity</h3>
+        <p>Add life to your site with events and animations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" aria-label="Featured Projects">
+    <h2>Featured Projects</h2>
+    <div class="slider" role="region" aria-roledescription="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="1.jpg" alt="Project 1" />
         </div>
 
-        <div class="card">
-          <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-          <h3>Responsive Design</h3>
-          <p>Make layouts that adapt to any device.</p>
+        <div class="slide">
+          <img src="1.jpg" alt="Project 2" />
         </div>
 
-        <div class="card">
-          <i class="fas fa-robot" aria-hidden="true"></i>
-          <h3>JS Interactivity</h3>
-          <p>Add life to your site with events and animations.</p>
+        <div class="slide">
+          <img src="1.jpg" alt="Project 3" />
         </div>
       </div>
-    </section>
+      <button class="slide-btn prev" aria-label="Previous slide">
+        <</button>
+          <button class="slide-btn next" aria-label="Next slide">></button>
+    </div>
+  </section>
 
-    <section id="projects" aria-label="Featured Projects">
-      <h2>Featured Projects</h2>
-      <div class="slider" role="region" aria-roledescription="carousel">
-        <div class="slides">
-          <div class="slide">
-            <img
-              src="1.jpg"
-              alt="Project 1"
-            />
-          </div>
+  <section id="contact" aria-label="Contact Me">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
 
-          <div class="slide">
-            <img
-              src="1.jpg"
-              alt="Project 2"
-            />
-          </div>
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
 
-          <div class="slide">
-            <img
-              src="1.jpg"
-              alt="Project 3"
-            />
-          </div>
-        </div>
-        <button class="slide-btn prev" aria-label="Previous slide"><</button>
-        <button class="slide-btn next" aria-label="Next slide">></button>
-      </div>
-    </section>
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
 
-    <section id="contact" aria-label="Contact Me">
-      <h2>Contact Me</h2>
-      <form id="contactForm" novalidate>
-        <label for="name">Name</label>
-        <input type="text" id="name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
+      <button type="submit" class="btn">Send Message</button>
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="5" required></textarea>
+      <p id="formMsg" class="form-message"></p>
+    </form>
+  </section>
+  <script>
+    // Slider
+    const slides = document.querySelector('.slides');
+    const slideEls = document.querySelectorAll('.slide');
+    const count = slideEls.length;
+    let i = 0;
 
-        <button type="submit" class="btn">Send Message</button>
+    const update = () => {
+      slides.style.transform = `translateX(-${i * 100}%)`;
+    };
 
-        <p id="formMsg" class="form-message"></p>
-      </form>
-    </section>
-    <script>
-      const slides = document.querySelector('.slides');
-      const count = document.querySelector('.slide').length;
-      let i = 0;
-      document.querySelector('.next').onclick(()=> {
-        i = (i + 1) % count;
-        slides.style.transform = `translateX(-${i * 100}%)`;
-      });
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
 
-      document.querySelector('.prev').onclick(()=> {
-        i = (i-1+count)%count;
-        slides.style.transform=`translateX(-${i*100}%)`;
-      })
+    nextBtn.onclick = () => {
+      i = (i + 1) % count;
+      update();
+    };
 
-      const navT = document.querySelector('.nav-toggle');
-      const navM = document.querySelector('.nav-menu');
+    prevBtn.onclick = () => {
+      i = (i - 1 + count) % count;
+      update();
+    };
 
-      navT.onclick(()=>{navM.classList.toggle('show');});
+    // Mobile nav toggle
+    const navT = document.querySelector('.nav-toggle');
+    const navM = document.querySelector('.nav-menu');
+    navT.onclick = () => { navM.classList.toggle('show'); };
 
-      // scroll reveal
-      const obs = new IntersectionObserver(es=>es.forEach(e=>{
-        if (e.isIntersecting) {
-          e.target.classList.add('revealed');
-          obs.unobserve(e.target);
-        }
-      }), {threshold: 0.2});
+    // Scroll reveal
+    const obs = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('revealed');
+        obs.unobserve(e.target);
+      }
+    }), { threshold: 0.2 });
 
-      document.querySelectorALL('.section-reveal').forEach(s=>obs.observe(s));
+    document.querySelectorAll('.section-reveal').forEach(s => obs.observe(s));
+  </script>
 
-    </script>
-  </body>
+</body>
+
 </html>

@@ -106,8 +106,8 @@ h2 {
     transition: background var(--transition);
 }
 
-btn:hover {
-    background: var(--clr-secondary);
+.btn:hover { 
+  background: var(--clr-secondary);
 }
 
 .feature-cards {
@@ -178,12 +178,8 @@ input, textarea {
     right: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  .nav-menu { display: none; flex-direction: column; }
+  .nav-menu.show { display: flex; }
+}
